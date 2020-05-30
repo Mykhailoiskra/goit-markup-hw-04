@@ -333,22 +333,34 @@ img {
   justify-content: space-between;
 }
 
-.team-links .element {
+/* .team-links .element {
+  padding: 12px;
+} */
+
+/* .team-links .element:hover,
+.team-links .element:focus {
+  background-color: var(--accent-color);
+} */
+
+.team-links a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
   width: 44px;
   height: 44px;
   border-radius: 50px;
   padding: 12px;
 }
 
-.team-links .element:hover,
-.team-links .element:focus {
+.team-links a:hover,
+.team-links a:focus {
   background-color: var(--accent-color);
 }
 
-.team-links a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
+.team-links a:hover > .social-network-icon,
+.team-links a:focus > .social-network-icon {
+  fill: #ffffff;
 }
 
 .social-network-icon {
@@ -358,10 +370,6 @@ img {
   fill: #afb1b8;
 }
 
-.social-network-icon:hover,
-.social-network-icon:focus {
-  fill: #ffffff;
-}
 /* Постоянные клиенты */
 
 .clients-section {
