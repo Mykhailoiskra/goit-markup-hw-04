@@ -123,10 +123,24 @@ img {
 
 /* Hero */
 .hero {
-  background-color: grey;
-  text-align: center;
+  
+  max-width: 1600px;
+  height: 600px; 
+  margin-left: auto; 
+  margin-right: auto;
+  padding-top: 200px;
 
-  outline: 2px solid red;
+  background-image: linear-gradient(
+  to right,
+   rgba(47, 48, 58, 0.8),
+   rgba(47, 48, 58, 0.8)
+   ),
+  url(../images/hero-bg-image.jpg);
+  background-color: rgb(47, 48, 58);
+  background-size: cover;
+  background-position: center;
+  
+  text-align: center;
 }
 
 .hero-title {
@@ -172,6 +186,31 @@ img {
 }
 .competencies-list .item {
   width: 270px;
+}
+
+.competencies-list .item::before {
+  content: '';
+  display: block; 
+  height: 120px; 
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+ 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.satellite-icon::before {
+  background-image: url(../images/satellite-plate.svg);
+}
+
+.clock-icon::before {
+  background-image: url(../images/clock.svg);
+}
+
+.diagram-icon::before { background-image: url(../images/diagram.svg);}
+
+.astronaut-icon::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .competencies-list .item:not(:last-child) {
