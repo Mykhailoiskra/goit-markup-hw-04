@@ -101,8 +101,12 @@ img {
 
 .nav-address {
   margin-left: auto;
+  display: inline-flex;
+  align-items: center;
 }
 .contact-link {
+  display: inline-flex;
+  align-items: center;
   color: inherit;
   text-decoration: none;
   font-style: normal;
@@ -118,6 +122,11 @@ img {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.contact-icon {
+  margin-right: 10px;
 }
 
 /* Hero */
