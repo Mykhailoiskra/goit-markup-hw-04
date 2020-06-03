@@ -122,11 +122,16 @@ img {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+}
+
+.contact-link:hover .contact-icon,
+.contact-link:focus .contact-icon {
   fill: var(--accent-color);
 }
 
 .contact-icon {
   margin-right: 10px;
+  fill: #757575;
 }
 
 /* Hero */
@@ -486,6 +491,11 @@ footer {
   margin-bottom: 0;
 }
 
+.main-address .link:hover,
+.main-address .link:focus {
+  color: var(--accent-color);
+}
+
 .join {
   display: flex;
   width: 206px;
@@ -595,8 +605,7 @@ footer {
   /* outline: 2px solid red;  */
 }
 .products .item {
-  /* width: calc((100%-60px) / 3); */
-  width: 370px;
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 
